@@ -2,7 +2,7 @@
  * DANVERSE Asset Metadata
  * Central repository for all image and video metadata
  * DANVERSE: AI-powered creative studio specializing in cinematic brand systems,
- * high-end visuals, motion, interactive web experiences, and AI-assisted production
+ * high-end visuals, motion, interactive web experiences, and AI-assisted production workflows
  */
 
 export interface AssetMetadata {
@@ -32,6 +32,16 @@ export const assetsMetadata: Record<string, AssetMetadata> = {
     description:
       "Primary brand identity featuring dynamic V letterform in signature red-magenta gradient, embodying speed and creative momentum.",
     alt: "DANVERSE logo with stylized V in red gradient",
+  },
+  "/images/logo-color.png": {
+    title: "DANVERSE Color Logo",
+    description: "Full-color DANVERSE logo for light backgrounds and primary brand applications.",
+    alt: "DANVERSE full color logo",
+  },
+  "/images/logo-white.png": {
+    title: "DANVERSE White Logo",
+    description: "White DANVERSE logo variant for dark backgrounds and reversed applications.",
+    alt: "DANVERSE white logo",
   },
 
   // Interactive Clean Section
@@ -181,6 +191,41 @@ export const assetsMetadata: Record<string, AssetMetadata> = {
     description: "Conceptual photography from experimental brand campaign exploring motion and energy.",
     alt: "Dynamic conceptual photography",
   },
+  "/images/lorenzo-piloto.png": {
+    title: "Studio Creative Director",
+    description: "DANVERSE creative director portrait showcasing the human element behind AI-powered workflows.",
+    alt: "Professional creative director portrait",
+  },
+  "/images/lorenzo-piloto3.png": {
+    title: "Production Intensity",
+    description: "Capturing the focus and precision required in high-stakes brand production environments.",
+    alt: "Focused creative professional during production",
+  },
+  "/images/lorenzo-piloto4.png": {
+    title: "Creative Vision",
+    description: "Behind-the-scenes moment illustrating DANVERSE's hands-on approach to creative direction.",
+    alt: "Creative professional reviewing work",
+  },
+  "/images/lorenzo-piloto6.png": {
+    title: "Studio Session",
+    description: "Active studio environment showcasing collaborative creative process and rapid iteration.",
+    alt: "Studio creative session in progress",
+  },
+  "/images/lorenzo-piloto8.png": {
+    title: "Direction Moment",
+    description: "Creative direction in action, demonstrating DANVERSE's commitment to excellence.",
+    alt: "Creative director providing direction",
+  },
+  "/images/lorenzo-piloto9.png": {
+    title: "Production Flow",
+    description: "Dynamic production moment capturing the energy and momentum of creative work.",
+    alt: "Active production environment moment",
+  },
+  "/images/lorenzo-piloto10.png": {
+    title: "Creative Process",
+    description: "Intimate look at the creative process behind DANVERSE's cinematic outputs.",
+    alt: "Creative professional in workflow",
+  },
 
   // Lofan images (repurposed as team/client moments)
   "/images/lofan/lofan.jpg": {
@@ -192,6 +237,36 @@ export const assetsMetadata: Record<string, AssetMetadata> = {
     title: "Production Environment",
     description: "Dynamic production environment showing DANVERSE's rapid iteration workflow in action.",
     alt: "Active production environment",
+  },
+  "/images/lofan/lofan2.jpg": {
+    title: "Team Collaboration",
+    description: "DANVERSE team members collaborating on complex brand challenge.",
+    alt: "Creative team collaboration moment",
+  },
+  "/images/lofan/lofan4.jpg": {
+    title: "Client Workshop",
+    description: "Interactive workshop session with client stakeholders developing brand strategy.",
+    alt: "Workshop collaboration session",
+  },
+  "/images/lofan/lofan5.jpg": {
+    title: "Creative Energy",
+    description: "High-energy creative session demonstrating DANVERSE's passionate approach.",
+    alt: "Energetic creative session",
+  },
+  "/images/lofan/lofan6.jpg": {
+    title: "Production Teamwork",
+    description: "Coordinated team effort during intensive production sprint.",
+    alt: "Production team working together",
+  },
+  "/images/lofan/lofan7.jpg": {
+    title: "Strategy Session",
+    description: "Strategic planning session for major brand campaign rollout.",
+    alt: "Strategy planning session",
+  },
+  "/images/lofan/lofan8.jpg": {
+    title: "Creative Momentum",
+    description: "Capturing the momentum and flow of successful creative collaboration.",
+    alt: "Dynamic collaboration moment",
   },
 
   // Podium images (repurposed as success/delivery moments)
@@ -210,6 +285,21 @@ export const assetsMetadata: Record<string, AssetMetadata> = {
     description: "Recognition of creative excellence and innovative approach to brand storytelling.",
     alt: "Recognition moment for creative achievement",
   },
+  "/images/lorenzo-podio4.png": {
+    title: "Campaign Success",
+    description: "Celebrating successful campaign launch and positive client reception.",
+    alt: "Professional celebrating campaign success",
+  },
+  "/images/lorenzo-podio6.png": {
+    title: "Project Milestone",
+    description: "Marking significant project milestone and creative breakthrough.",
+    alt: "Project milestone celebration",
+  },
+  "/images/lorenzo-podio7.png": {
+    title: "Excellence Recognition",
+    description: "Recognition of creative excellence and innovative brand solutions.",
+    alt: "Recognition moment for creative work",
+  },
 
   // Box/Garage images (repurposed as studio/workspace)
   "/images/lorenzo-box.png": {
@@ -226,6 +316,16 @@ export const assetsMetadata: Record<string, AssetMetadata> = {
     title: "Creative Lab",
     description: "Creative laboratory space where DANVERSE experiments with new AI tools and production techniques.",
     alt: "Creative laboratory workspace",
+  },
+  "/images/lorenzo-col.jpg": {
+    title: "Collaborative Workspace",
+    description: "Modern workspace designed for creative collaboration and rapid iteration.",
+    alt: "Collaborative creative workspace",
+  },
+  "/images/lorenzo-col2.jpg": {
+    title: "Studio Environment",
+    description: "DANVERSE studio environment blending technology with creative atmosphere.",
+    alt: "Creative studio environment",
   },
 
   // Hand icons (animated sequence)
@@ -285,6 +385,255 @@ export const assetsMetadata: Record<string, AssetMetadata> = {
     title: "Footer Mask Shape",
     description: "Custom SVG mask creating smooth visual transition in footer section.",
     alt: "Footer mask shape graphic",
+  },
+  "/images/inspired-by-lando-norris.png": {
+    title: "Creative Inspiration",
+    description: "Visual inspiration representing speed, precision, and performance in creative work.",
+    alt: "Creative inspiration imagery",
+  },
+  "/images/race-day.svg": {
+    title: "Launch Day Graphic",
+    description: "Campaign launch day visual representing preparation and execution excellence.",
+    alt: "Campaign launch day graphic",
+  },
+  "/images/tras.svg": {
+    title: "Background Texture 1",
+    description: "Background texture pattern adding visual depth to interface sections.",
+    alt: "Decorative background texture pattern",
+  },
+  "/images/trass.svg": {
+    title: "Background Texture 2",
+    description: "Alternative background texture for visual variety and depth.",
+    alt: "Decorative background texture variation",
+  },
+  "/images/spla.svg": {
+    title: "Impact Element",
+    description: "Visual impact element symbolizing creative breakthrough and energy.",
+    alt: "Decorative impact splash element",
+  },
+  "/images/trilha1.svg": {
+    title: "Trail Pattern 1",
+    description: "Motion trail pattern representing creative journey and momentum.",
+    alt: "Decorative motion trail pattern",
+  },
+  "/images/trilha22.svg": {
+    title: "Trail Pattern 2",
+    description: "Variation of motion trail pattern for visual rhythm.",
+    alt: "Decorative trail pattern variation",
+  },
+  "/images/trilhadir2.svg": {
+    title: "Directional Trail",
+    description: "Directional trail element guiding visual flow and narrative.",
+    alt: "Decorative directional trail",
+  },
+  "/images/curveb.svg": {
+    title: "Bottom Curve",
+    description: "Bottom curve element creating smooth section transitions.",
+    alt: "Decorative bottom curve element",
+  },
+  "/images/curvet.svg": {
+    title: "Top Curve",
+    description: "Top curve element for elegant section introductions.",
+    alt: "Decorative top curve element",
+  },
+  "/images/curve-lines-texture.svg": {
+    title: "Curve Lines Texture",
+    description: "Linear curve texture adding subtle detail to interface elements.",
+    alt: "Decorative curve lines texture",
+  },
+  "/images/mask-pneu.svg": {
+    title: "Mask Shape",
+    description: "Custom mask shape for creative visual treatments and overlays.",
+    alt: "Decorative mask shape element",
+  },
+  "/images/v0mask.svg": {
+    title: "V0 Mask Shape",
+    description: "Specialized mask shape for advanced visual composition.",
+    alt: "V0 decorative mask shape",
+  },
+
+  // Trophy images (repurposed as achievement/award icons)
+  "/images/trofeus-lorenzo.PNG": {
+    title: "Achievement Collection",
+    description: "Collection of achievements and recognition in creative excellence.",
+    alt: "Creative achievement awards collection",
+  },
+  "/images/trofeus/trofeu1.svg": {
+    title: "Achievement Icon 1",
+    description: "Award icon representing excellence in brand identity design.",
+    alt: "Achievement award icon 1",
+  },
+  "/images/trofeus/trofeu2.svg": {
+    title: "Achievement Icon 2",
+    description: "Award icon representing excellence in motion graphics.",
+    alt: "Achievement award icon 2",
+  },
+  "/images/trofeus/trofeu3.svg": {
+    title: "Achievement Icon 3",
+    description: "Award icon representing excellence in cinematic production.",
+    alt: "Achievement award icon 3",
+  },
+  "/images/trofeus/trofeu4.svg": {
+    title: "Achievement Icon 4",
+    description: "Award icon representing excellence in interactive design.",
+    alt: "Achievement award icon 4",
+  },
+  "/images/trofeus/trofeu5.svg": {
+    title: "Achievement Icon 5",
+    description: "Award icon representing excellence in AI-powered workflows.",
+    alt: "Achievement award icon 5",
+  },
+  "/images/trofeus/trofeu6.svg": {
+    title: "Achievement Icon 6",
+    description: "Award icon representing excellence in 3D visualization.",
+    alt: "Achievement award icon 6",
+  },
+  "/images/trofeus/trofeu7.svg": {
+    title: "Achievement Icon 7",
+    description: "Award icon representing excellence in brand storytelling.",
+    alt: "Achievement award icon 7",
+  },
+  "/images/trofeus/trofeu8.svg": {
+    title: "Achievement Icon 8",
+    description: "Award icon representing excellence in experiential design.",
+    alt: "Achievement award icon 8",
+  },
+  "/images/trofeus/trofeu9.svg": {
+    title: "Achievement Icon 9",
+    description: "Award icon representing excellence in generative art.",
+    alt: "Achievement award icon 9",
+  },
+
+  // Pose/Portrait images
+  "/images/lorenzo-pose.png": {
+    title: "Brand Portrait",
+    description: "Professional brand portrait emphasizing creative leadership and vision.",
+    alt: "Professional brand portrait",
+  },
+  "/images/lorenzo-pose2.png": {
+    title: "Studio Portrait Session",
+    description: "Cinematic portrait showcasing DANVERSE's attention to visual storytelling.",
+    alt: "Cinematic studio portrait",
+  },
+  "/images/lorenzo-pose3.png": {
+    title: "Creative Leadership",
+    description: "Portrait capturing the essence of creative direction and strategic thinking.",
+    alt: "Creative leader portrait",
+  },
+  "/images/lorenzo-pose33.jpg": {
+    title: "Tech Specs Portrait",
+    description: "Technical specifications portrait blending human creativity with technological precision.",
+    alt: "Technical portrait with specifications",
+  },
+  "/images/lorenzo-pose4.png": {
+    title: "Vision Portrait",
+    description: "Portrait emphasizing forward-thinking creative vision and innovation.",
+    alt: "Visionary creative portrait",
+  },
+  "/images/lorenzo-pose5.png": {
+    title: "Brand Identity Shot",
+    description: "Identity portrait establishing DANVERSE's distinctive creative voice.",
+    alt: "Brand identity portrait",
+  },
+  "/images/lorenzo-pose6.png": {
+    title: "Professional Presence",
+    description: "Professional portrait conveying expertise and creative confidence.",
+    alt: "Professional creative portrait",
+  },
+
+  // Helmet/equipment images (repurposed as creative tools/assets)
+  "/images/CAPACETE_LORENZO_OFICIAL.png": {
+    title: "Signature Creative Tool",
+    description: "Signature creative equipment representing DANVERSE's unique approach to production.",
+    alt: "Signature creative production equipment",
+  },
+  "/images/lorenzo-off.png": {
+    title: "Motion & Interactive Project",
+    description: "Visual from motion graphics and interactive experience project showcase.",
+    alt: "Motion graphics and interactive project visual",
+  },
+  "/images/cap-lorenzo.png": {
+    title: "Brand Merchandise",
+    description: "DANVERSE branded merchandise showcasing studio identity.",
+    alt: "DANVERSE branded cap merchandise",
+  },
+
+  // Bike/Equipment images (repurposed as production equipment)
+  "/images/moto.png": {
+    title: "Production Equipment 1",
+    description: "Professional production equipment utilized in DANVERSE's technical workflows.",
+    alt: "Professional production equipment",
+  },
+  "/images/moto2.png": {
+    title: "Production Equipment 2",
+    description: "Advanced production technology enabling rapid creative iteration.",
+    alt: "Advanced production technology",
+  },
+  "/images/moto3.png": {
+    title: "Production Equipment 3",
+    description: "State-of-the-art equipment supporting DANVERSE's cinematic output.",
+    alt: "State-of-the-art production equipment",
+  },
+
+  // Icon images
+  "/images/ico-helmet.png": {
+    title: "Brand Icon",
+    description: "DANVERSE brand icon representing creative protection and bold vision.",
+    alt: "DANVERSE brand icon",
+  },
+  "/images/icon/ico-helmet-w.png": {
+    title: "Brand Icon White",
+    description: "White variant of DANVERSE brand icon for dark backgrounds.",
+    alt: "DANVERSE white brand icon",
+  },
+
+  // Placeholder images
+  "/placeholder.svg": {
+    title: "Placeholder Image",
+    description: "Temporary placeholder for content in development.",
+    alt: "Placeholder image",
+  },
+  "/placeholder.jpg": {
+    title: "Placeholder Photo",
+    description: "Temporary photo placeholder for content in development.",
+    alt: "Placeholder photo",
+  },
+  "/placeholder-logo.svg": {
+    title: "Placeholder Logo",
+    description: "Temporary logo placeholder for content in development.",
+    alt: "Placeholder logo graphic",
+  },
+  "/placeholder-logo.png": {
+    title: "Placeholder Logo PNG",
+    description: "Temporary logo placeholder in raster format.",
+    alt: "Placeholder logo image",
+  },
+  "/placeholder-user.jpg": {
+    title: "Placeholder User",
+    description: "Temporary user avatar placeholder for testimonials or team sections.",
+    alt: "Placeholder user avatar",
+  },
+
+  // App icons
+  "/icon.svg": {
+    title: "DANVERSE App Icon",
+    description: "Primary app icon for DANVERSE web application.",
+    alt: "DANVERSE application icon",
+  },
+  "/icon-light-32x32.png": {
+    title: "Light Theme Icon",
+    description: "Small format icon optimized for light theme displays.",
+    alt: "DANVERSE icon for light theme 32x32",
+  },
+  "/icon-dark-32x32.png": {
+    title: "Dark Theme Icon",
+    description: "Small format icon optimized for dark theme displays.",
+    alt: "DANVERSE icon for dark theme 32x32",
+  },
+  "/apple-icon.png": {
+    title: "Apple Touch Icon",
+    description: "Icon optimized for Apple devices and home screen bookmarks.",
+    alt: "DANVERSE Apple touch icon",
   },
 }
 
