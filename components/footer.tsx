@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import Helmet3DModel from "./helmet-3d-model"
 import InfiniteLogoSlider from "./infinite-logo-slider"
+import { getAssetMetadata } from "@/src/content/assets-meta"
 
 function LoadingFallback() {
   return (
@@ -18,6 +19,8 @@ function LoadingFallback() {
 }
 
 export default function Footer() {
+  const logoMeta = getAssetMetadata("/images/danverse-logo.png")
+
   return (
     <footer className="bg-dan-acid pt-0 px-4 md:px-8 min-h-screen flex flex-col justify-end relative pb-5">
       <div className="absolute top-0 left-0 right-0 h-72 bg-gradient-to-b from-dan-bg to-dan-acid z-0" />
@@ -33,6 +36,7 @@ export default function Footer() {
             maskRepeat: "no-repeat",
             WebkitMaskRepeat: "no-repeat",
           }}
+          aria-label="Decorative footer mask shape"
         >
           <div
             className="absolute inset-0 w-full h-full opacity-30"
@@ -42,6 +46,7 @@ export default function Footer() {
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
             }}
+            aria-label="Decorative curve texture pattern"
           />
         </div>
 
@@ -75,7 +80,8 @@ export default function Footer() {
               <div className="absolute top-0 left-0 right-0 z-0 text-center transform -translate-y-1/4 md:-translate-y-0 mt-12">
                 <Image
                   src="/images/danverse-logo.png"
-                  alt="DANVERSE"
+                  alt={logoMeta.alt}
+                  title={logoMeta.title}
                   width={300}
                   height={120}
                   className="h-24 md:h-32 w-auto object-contain mx-auto mb-4"

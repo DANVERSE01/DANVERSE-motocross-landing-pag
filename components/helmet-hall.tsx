@@ -3,9 +3,15 @@
 import { useState } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { getAssetMetadata } from "@/src/content/assets-meta"
 
 const projects = [
-  { id: 1, name: "Neural Brand System", year: "2025", image: "/futuristic-ai-brain-neural-network-holographic-blu.jpg" },
+  {
+    id: 1,
+    name: "Neural Brand System",
+    year: "2025",
+    image: "/futuristic-ai-brain-neural-network-holographic-blu.jpg",
+  },
   { id: 2, name: "Cyberpunk Identity", year: "2025", image: "/cyberpunk-neon-portrait-with-holographic-overlay.jpg" },
   { id: 3, name: "AI Campaign", year: "2025", image: "/cinematic-ai-generated-portrait-futuristic-style.jpg" },
   { id: 4, name: "Motion Design", year: "2024", image: "/abstract-digital-motion-graphics-particles.jpg" },
@@ -52,50 +58,55 @@ export default function HelmetHall() {
         </motion.div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mb-16">
-          {projects.map((project, index) => (
-            <motion.div
-              key={project.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.03, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="group relative cursor-pointer"
-              onMouseEnter={() => setHoveredProject(project.id)}
-              onMouseLeave={() => setHoveredProject(null)}
-              style={{
-                gridRow: index % 4 === 1 ? "span 1" : "auto",
-              }}
-            >
+          {projects.map((project, index) => {
+            const projectMeta = getAssetMetadata(project.image)
+
+            return (
               <motion.div
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-                className="relative aspect-square overflow-hidden rounded-2xl bg-dan-blue/50 
+                key={project.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.03, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="group relative cursor-pointer"
+                onMouseEnter={() => setHoveredProject(project.id)}
+                onMouseLeave={() => setHoveredProject(null)}
+                style={{
+                  gridRow: index % 4 === 1 ? "span 1" : "auto",
+                }}
+              >
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                  className="relative aspect-square overflow-hidden rounded-2xl bg-dan-blue/50 
                            border-2 border-dan-gray/20 
                            group-hover:border-dan-acid 
                            group-hover:shadow-2xl 
                            group-hover:shadow-dan-acid/20 
                            transition-all duration-300"
-              >
-                <div className="absolute inset-0 flex items-center justify-center p-4">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.name}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
+                >
+                  <div className="absolute inset-0 flex items-center justify-center p-4">
+                    <Image
+                      src={project.image || "/placeholder.svg"}
+                      alt={projectMeta.alt}
+                      title={projectMeta.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
 
-                <div className="absolute bottom-4 right-4 text-right bg-dan-bg/60 backdrop-blur-sm px-3 py-2 rounded-lg">
-                  <p className="text-xs md:text-sm font-bold text-white/70 group-hover:text-white transition-colors duration-300">
-                    {project.name}
-                  </p>
-                  <p className="text-sm md:text-base font-black text-dan-acid group-hover:scale-110 group-hover:text-white transition-all duration-300 inline-block">
-                    {project.year}
-                  </p>
-                </div>
+                  <div className="absolute bottom-4 right-4 text-right bg-dan-bg/60 backdrop-blur-sm px-3 py-2 rounded-lg">
+                    <p className="text-xs md:text-sm font-bold text-white/70 group-hover:text-white transition-colors duration-300">
+                      {project.name}
+                    </p>
+                    <p className="text-sm md:text-base font-black text-dan-acid group-hover:scale-110 group-hover:text-white transition-all duration-300 inline-block">
+                      {project.year}
+                    </p>
+                  </div>
+                </motion.div>
               </motion.div>
-            </motion.div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>

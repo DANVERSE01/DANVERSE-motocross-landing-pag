@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
+import { getAssetMetadata } from "@/src/content/assets-meta"
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -75,6 +76,8 @@ export default function Header() {
     }
   }, [menuOpen])
 
+  const logoMeta = getAssetMetadata("/images/danverse-logo.png")
+
   return (
     <>
       <motion.header
@@ -93,7 +96,8 @@ export default function Header() {
           >
             <Image
               src="/images/danverse-logo.png"
-              alt="DANVERSE"
+              alt={logoMeta.alt}
+              title={logoMeta.title}
               width={160}
               height={60}
               className="h-14 w-auto object-contain"
@@ -149,7 +153,8 @@ export default function Header() {
               >
                 <Image
                   src="/images/danverse-logo.png"
-                  alt="DANVERSE"
+                  alt={logoMeta.alt}
+                  title={logoMeta.title}
                   width={200}
                   height={80}
                   className="h-20 w-auto object-contain mx-auto"
