@@ -1,3 +1,5 @@
+import "./lib/react-compat.js"
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typescript: {
@@ -6,7 +8,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
- 
 }
 
 export default nextConfig

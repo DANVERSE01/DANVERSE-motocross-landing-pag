@@ -2,14 +2,9 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
-import { Oswald } from "next/font/google"
 import Image from "next/image"
 
-const oswald = Oswald({
-  weight: "700",
-  subsets: ["latin"],
-  variable: "--font-oswald",
-})
+import { oswald } from "@/lib/fonts"
 
 export function RaceDayCountdown() {
   const [timeLeft, setTimeLeft] = useState({
